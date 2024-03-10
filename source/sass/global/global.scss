@@ -15,10 +15,10 @@ body {
   min-height: 100%;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  font-family: "Inter Tight", "Arial", sans-serif;
+  font-family: $ff-ttnorms;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.2;
+  line-height: 1.4;
 
   &.no-scroll {
     overflow: hidden;
@@ -43,28 +43,10 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-//
-//.overlay {
-//  display: none;
-//  position: fixed;
-//  top: 0;
-//  left: 0;
-//  width: 100vw;
-//  height: 100vh;
-//  background-color: #000;
-//  opacity: 0.3;
-//  z-index: 99;
-//  transition: background-color $trans-default;
-//}
 
 .container {
-  max-width: 78rem + 2.5rem * 2;
+  max-width: 81.25rem + 2.5rem * 2;
   width: 100%;
   margin: 0 auto;
   padding: 0 2.5rem;
-
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    padding: 0 1.25rem;
-  }
 }

@@ -1,0 +1,22 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+$color-text-dark:                   #222834;
+$color-text-light:                  $color-default-white;
+$color-accent-main:                 #0066ff;
+
+// Typography
+// ---------------------------------
+
+$ff-ttnorms:                        "TT Norms Pro", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
