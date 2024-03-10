@@ -5,13 +5,14 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Aqua System</title>
 </head>
 <body>
 <header class="header">
-  <div class="header__container">
-    <div class="container">
+  <div class="container">
+    <div class="header__container">
       <a href="#" class="header__logo logo">
         <picture>
           <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
@@ -42,6 +43,7 @@
             <ul class="contacts-messengers__list">
               <li class="contacts-messengers__item">
                 <a href="#" class="contacts-messengers__link">
+                  <span class="visually-hidden">Написать нам в Телеграм</span>
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <use xlink:href="img/sprite.svg#telegram"></use>
                   </svg>
@@ -49,6 +51,7 @@
               </li>
               <li class="contacts-messengers__item">
                 <a href="#" class="contacts-messengers__link">
+                  <span class="visually-hidden">Написать нам в Вайбер</span>
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <use xlink:href="img/sprite.svg#viber"></use>
                   </svg>
@@ -57,14 +60,19 @@
             </ul>
           </div>
         </nav>
+        <button type="button" class="main-nav__button-open" aria-label="Переключатель отображения меню" aria-pressed="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </div>
 </header>
 <main class="main">
   <section class="promo">
-    <div class="promo__container">
-      <div class="container">
+    <div class="container">
+      <div class="promo__container">
         <h2 class="visually-hidden">Слайдер с нашими системами водяного охлаждения</h2>
         <div class="promo__slider promo-slider">
           <div class="promo-slider__wrapper">
@@ -99,7 +107,8 @@
               </ul>
               <picture class="promo-slider__slide-background">
                 <source srcset="img/promo-slide-1.webp 1x, img/promo-slide-1@2x.webp" type="image/webp">
-                <img src="img/promo-slide-1.jpg" srcset="img/promo-slide-1@2x.jpg 2x" alt="" width="1300" height="600" draggable="false" aria-hidden="true">
+                <img src="img/promo-slide-1.jpg" srcset="img/promo-slide-1@2x.jpg 2x" alt="" width="1300" height="600"
+                     draggable="false" aria-hidden="true">
               </picture>
 
             </div>
@@ -170,8 +179,8 @@
     </div>
   </section>
   <section class="ready-solutions">
-    <div class="ready-solutions__container">
-      <div class="container">
+    <div class="container">
+      <div class="ready-solutions__container">
         <h2 class="ready-solutions__heading">Готовые решения <span
           class="ready-solutions__heading-mark">AquaSystem</span></h2>
         <div class="ready-solutions__tabs-buttons">
@@ -320,8 +329,8 @@
     </div>
   </section>
   <section class="what-is">
-    <div class="what-is__container">
-      <div class="container">
+    <div class="container">
+      <div class="what-is__container">
         <h2 class="what-is__heading">Что такое система водяного охлаждения <span class="what-is__heading-mark">AquaSystem?</span>
         </h2>
         <p class="what-is__text">Разработка компании AquaSystems - модификации стандартного охлаждения асик майнеров 19
@@ -336,8 +345,8 @@
     </div>
   </section>
   <section class="where-used">
-    <div class="where-used__container">
-      <div class="container">
+    <div class="container">
+      <div class="where-used__container">
         <h2 class="where-used__heading">Где применяют систему <span
           class="where-used__heading-mark">AquaSystem Hydro?</span></h2>
         <ul class="where-used__list">
@@ -374,8 +383,8 @@
     </div>
   </section>
   <section class="what-difference">
-    <div class="what-difference__container">
-      <div class="container">
+    <div class="container">
+      <div class="what-difference__container">
         <h2 class="what-difference__heading"><span class="what-difference__heading">Чем отличается Hydro</span> от
           заводского охлаждения?</h2>
         <div class="what-difference__wrapper">
@@ -433,8 +442,8 @@
     </div>
   </section>
   <section class="cta">
-    <div class="cta__container">
-      <div class="container">
+    <div class="container">
+      <div class="cta__container">
         <h1 class="cta__heading">Закажите лучшую систему для охлаждения Asic-майнера уже сегодня!</h1>
         <p class="cta__text">По согласованию с менеджером, вы сможете заказать любую комплектность посавки. Либо выбрать
           уже из готовых на сайте или после согласования с менеджером.</p>
@@ -447,8 +456,8 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__container">
-    <div class="container">
+  <div class="container">
+    <div class="footer__container">
       <a href="#" class="header__logo logo">
         <picture>
           <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">

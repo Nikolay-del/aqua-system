@@ -1,0 +1,32 @@
+.contacts-messengers {
+  height: 3.1rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.6rem;
+  background-color: #eaedf2;
+  border-radius: 0.6rem;
+}
+
+.contacts-messengers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.contacts-messengers__link {
+  display: block;
+
+  svg {
+    display: block;
+    fill: $color-text-dark;
+    transition: $trans-default fill;
+  }
+
+  @include hover {
+    svg {
+      fill: $color-accent-main;
+    }
+  }
+}

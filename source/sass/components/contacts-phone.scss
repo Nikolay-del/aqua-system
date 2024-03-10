@@ -1,0 +1,47 @@
+.contacts-phone {
+  margin-left: 2rem;
+  display: flex;
+  align-items: start;
+}
+
+.contacts-phone__wrapper {
+  margin-right: 2.5rem;
+}
+
+.contacts-phone__text {
+  margin: 0;
+  font-weight: 500;
+  color: rgba($color-text-dark, 60%);
+}
+
+.contacts-phone__link {
+  font-size: 1rem;
+  line-height: 1.25;
+  text-decoration: none;
+  font-weight: 500;
+  color: $color-text-dark;
+  transition: $trans-default color;
+
+  @include hover {
+    color: $color-accent-main;
+  }
+}
+
+.contacts-phone__button-order {
+  cursor: pointer;
+  padding: 0 1.25rem;
+  height: 3.1rem;
+  background-color: $color-accent-main;
+  color: $color-default-white;
+  font-family: $ff-ttnorms;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 500;
+  border-radius: 0.63rem;
+  border: 0;
+  transition: $trans-default background-color;
+
+  @include hover {
+    background-color: darken($color-accent-main, 5%);
+  }
+}
