@@ -7,9 +7,8 @@
 
 .ready-solutions__heading {
   margin: 0;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: normal;
+
+  @include heading;
 }
 
 .ready-solutions__heading-mark {

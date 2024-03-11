@@ -1,0 +1,57 @@
+.cta__container {
+  padding: 3.75rem 4.38rem;
+  background: $color-accent-main url("../img/cta-decor.svg") repeat-y;
+  background-position: top -1rem right 7rem;
+  color: $color-text-light;
+  border-radius: 2rem;
+}
+
+.cta__heading {
+  width: 49%;
+  margin: 0 0 1.25rem;
+
+  @include heading;
+}
+
+.cta__text {
+  width: 48%;
+  margin: 0 0 2.5rem;
+  font-weight: 500;
+}
+
+.cta__buttons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.cta__button {
+  padding: 1.1rem 1.88rem;
+  text-decoration: none;
+  color: $color-default-white;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 0.6rem;
+  border: 0;
+  cursor: pointer;
+  transition: $trans-default background-color,
+    $trans-default color;
+
+  &--main {
+    background-color: $color-text-dark;
+
+    @include hover {
+      background-color: darken($color-text-dark, 20%);
+    }
+  }
+
+  &--second {
+    background-color: transparent;
+    box-shadow: 0 0 0 2px $color-default-white inset;
+
+    @include hover {
+      background-color: $color-default-white;
+      color: $color-text-dark;
+    }
+  }
+}
