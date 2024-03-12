@@ -1,0 +1,107 @@
+.what-difference__heading {
+  width: 50%;
+  margin: 0 auto 2.5rem;
+  color: $color-text-dark;
+  text-align: center;
+
+  @include heading;
+}
+
+.what-difference__heading-mark {
+  color: $color-accent-main;
+}
+
+.what-difference__wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 28rem;
+  padding: 3.1rem 5rem 2.5rem;
+  display: grid;
+  grid-template-columns: 30.7% 1fr 30.7%;
+  background-color: $color-text-dark;
+  color: $color-text-light;
+  border-radius: 2rem;
+}
+
+.what-difference__name {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: normal;
+  font-weight: 500;
+  text-align: center;
+}
+
+.what-difference__wrap-table {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-difference__table {
+  margin: 0 0 2.5rem;
+  display: grid;
+  width: 100%;
+
+  tbody {
+    display: grid;
+    gap: 0.6rem;
+    font-weight: 500;
+  }
+}
+
+.what-difference__tr {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 26% 1fr 26%;
+}
+
+.what-difference__td {
+  padding: 0.6rem;
+  background-color: rgba(#3f475c, 10%);
+  border-radius: 0.6rem;
+  text-align: center;
+
+  &:nth-child(2), &:nth-child(3) {
+    background-color: $color-default-white;
+    color: $color-text-dark;
+    font-weight: 600;
+  }
+
+  &:nth-child(2) {
+    order: -1;
+    color: $color-accent-main;
+  }
+}
+
+.what-difference__button {
+  padding: 1rem 2.2rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  color: $color-default-white;
+  background-color: $color-accent-main;
+
+  @include hover-accent-button;
+}
+
+.what-difference__wrap-hydro {
+  .what-difference__picture {
+    bottom: -2.5rem;
+    left: 2rem;
+  }
+}
+
+.what-difference__wrap-default {
+  .what-difference__picture {
+    bottom: -6.3rem;
+    right: 7rem;
+  }
+}
+
+.what-difference__picture {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}

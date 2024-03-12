@@ -110,6 +110,10 @@
     align-items: center;
   }
 
+  li:not(:last-child) {
+    margin: 0 0 0.6rem;
+  }
+
   li svg {
     margin: 0 0.6rem 0 0;
     fill: #cfd4e0;
@@ -124,8 +128,6 @@
 
 .ready-solutions__link {
   margin-right: 1.25rem;
-  z-index: 1;
-  position: relative;
   padding: 1rem 2.2rem;
   color: $color-default-white;
   font-weight: 500;
@@ -133,26 +135,7 @@
   background-color: $color-accent-main;
   border-radius: 0.6rem;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    width: 90%;
-    height: 90%;
-    background-color: rgba($color-accent-main, 70%);
-    filter: blur(20px);
-    opacity: 0;
-    transition: $trans-default opacity;
-  }
-
-  @include hover {
-    &::after {
-      opacity: 1;
-    }
-  }
+  @include hover-accent-button;
 }
 
 .ready-solutions__price {

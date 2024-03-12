@@ -11,3 +11,29 @@
   font-weight: 500;
   line-height: normal;
 }
+
+@mixin hover-accent-button {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 90%;
+    height: 90%;
+    background-color: rgba($color-accent-main, 70%);
+    filter: blur(20px);
+    opacity: 0;
+    transition: $trans-default opacity;
+  }
+
+  @include hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
