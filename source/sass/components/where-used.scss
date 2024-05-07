@@ -1,0 +1,53 @@
+.where-used__heading {
+  margin: 0 0 2.5rem;
+  text-align: center;
+
+  @include heading;
+}
+
+.where-used__heading-mark {
+  display: block;
+  color: $color-accent-main;
+}
+
+.where-used__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.where-used__item {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 1.25rem;
+  background-color: $color-text-dark;
+  color: $color-text-light;
+}
+
+.where-used__icon {
+  margin: 0 0 3.1rem;
+  display: inline-block;
+  padding: 0.6rem;
+  background-color: $color-accent-main;
+  border-radius: 0.6rem;
+
+  svg {
+    display: block;
+  }
+}
+
+.where-used__name {
+  margin: 0 0 1.25rem;
+  justify-self: end;
+  font-size: 1.38rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.where-used__text {
+  margin: 0;
+  line-height: 1.8;
+  font-weight: 500;
+}

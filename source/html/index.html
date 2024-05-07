@@ -79,7 +79,7 @@
           <div class="promo-slider__wrapper">
             <div class="promo-slider__item">
               <p class="promo-slider__brand">AquaSystem</p>
-              <h3 class="promo-slider__heading">Система водяного охлаждения для Antminer</h3>
+              <h3 class="promo-slider__heading">Система водяного <br> охлаждения <br> <span>для Antminer</span></h3>
               <ul class="promo-slider__advantages-list">
                 <li class="promo-slider__advantages-item">
                   <svg width="30" height="30" viewBox="0 0 30 30">
@@ -353,6 +353,11 @@
             асик майнер у Вас дома либо в любом другом помещение с возможностью отапливать и экономить на этом.
           </li>
         </ul>
+        <picture class="what-is__picture">
+          <source srcset="img/what-is-bg.webp 1x, img/what-is-bg@2x.webp 2x" type="image/webp">
+          <img src="img/what-is-bg.png" srcset="img/what-is-bg@2x.png 2x" alt="фон" aria-hidden="true" draggable="false"
+               width="758" height="668">
+        </picture>
       </div>
     </div>
   </section>
@@ -361,43 +366,58 @@
       <div class="where-used__container">
         <h2 class="where-used__heading">Где применяют систему <span
           class="where-used__heading-mark">AquaSystem Hydro?</span></h2>
-        <ul class="where-used__list">
-          <li class="where-used__item">
-            <svg width="30" height="30" viewBox="0 0 30 30">
-              <use xlink:href="img/sprite.svg#where-used-flat"></use>
-            </svg>
-            <h3 class="where-used__name">В квартирах</h3>
-            <p class="where-used__text">В домашних условиях можно было размещать асики, но потолок размещения упирался
-              в выделение шума и тепла асиком в помещение. Что бы создать звукоизоляцию необходимо было обшивать
-              помещение и полностью изолировать его. С Системой СВО AquaSystem — теперь возможно размещать Асики хоть в
-              кладовке конвертируя тепло Асика в отопление пола и всей квартиры!</p>
-          </li>
-          <li class="where-used__item">
-            <svg width="30" height="30" viewBox="0 0 30 30">
-              <use xlink:href="img/sprite.svg#where-used-house"></use>
-            </svg>
-            <h3 class="where-used__name">Для дачи или дома</h3>
-            <p class="where-used__text">Средний майнер держит у себя от 1 до 5 асиков и очень часто размещение таких
-              асиков это частные дома или загородные (дачи) дома. Майня дома без СВО зимой — вы теряете ещё одну
-              возможность зарабатывать на экономии, заменяя отопление от котла на отопление от СВО AquaSystem Hydro</p>
-          </li>
-          <li class="where-used__item">
-            <svg width="30" height="30" viewBox="0 0 30 30">
-              <use xlink:href="img/sprite.svg#where-used-company"></use>
-            </svg>
-            <h3 class="where-used__name">Для предприятий и многоквартирных домов</h3>
-            <p class="where-used__text">Майнинг в промышленных помещениях или многоквартирных домах, позволит окупить
-              затраты на ЭЭ очень просто — перевести тепловыделение от МАЙНИНГ оборудования в отопление дома. Несколько
-              десятков устройств способно поддерживать температуру в помещениях в пределах 20* градусов зимой</p>
-          </li>
-        </ul>
+        <div class="where-used__slider">
+          <div class="where-used__wrapper">
+            <div class="where-used__item">
+              <div class="where-used__icon">
+                <svg width="30" height="30" viewBox="0 0 30 30">
+                  <use xlink:href="img/sprite.svg#where-used-flat"></use>
+                </svg>
+              </div>
+              <h3 class="where-used__name">В квартирах</h3>
+              <p class="where-used__text">В домашних условиях можно было размещать асики, но потолок размещения упирался
+                в выделение шума и тепла асиком в помещение. Что бы создать звукоизоляцию необходимо было обшивать
+                помещение и полностью изолировать его. С Системой СВО AquaSystem — теперь возможно размещать Асики хоть
+                в
+                кладовке конвертируя тепло Асика в отопление пола и всей квартиры!</p>
+            </div>
+            <div class="where-used__item">
+              <div class="where-used__icon">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <use xlink:href="img/sprite.svg#where-used-house"></use>
+                </svg>
+              </div>
+              <h3 class="where-used__name">Для дачи или дома</h3>
+              <p class="where-used__text">Средний майнер держит у себя от 1 до 5 асиков и очень часто размещение таких
+                асиков это частные дома или загородные (дачи) дома. Майня дома без СВО зимой — вы теряете ещё одну
+                возможность зарабатывать на экономии, заменяя отопление от котла на отопление от СВО AquaSystem
+                Hydro</p>
+            </div>
+            <div class="where-used__item">
+              <div class="where-used__icon">
+                <svg width="30" height="30" viewBox="0 0 30 30">
+                  <use xlink:href="img/sprite.svg#where-used-company"></use>
+                </svg>
+              </div>
+              <h3 class="where-used__name">Для предприятий и многоквартирных домов</h3>
+              <p class="where-used__text">Майнинг в промышленных помещениях или многоквартирных домах, позволит окупить
+                затраты на ЭЭ очень просто — перевести тепловыделение от МАЙНИНГ оборудования в отопление дома.
+                Несколько
+                десятков устройств способно поддерживать температуру в помещениях в пределах 20* градусов зимой</p>
+            </div>
+          </div>
+          <div class="where-used__controls">
+
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <section class="what-difference">
     <div class="container">
       <div class="what-difference__container">
-        <h2 class="what-difference__heading"><span class="what-difference__heading-mark">Чем отличается Hydro</span> от&nbsp;заводского охлаждения?</h2>
+        <h2 class="what-difference__heading"><span class="what-difference__heading-mark">Чем отличается Hydro</span> от&nbsp;заводского
+          охлаждения?</h2>
         <div class="what-difference__wrapper">
           <div class="what-difference__wrap-hydro">
             <p class="what-difference__name">
@@ -412,11 +432,11 @@
           <div class="what-difference__wrap-table">
             <table class="what-difference__table">
               <thead class="visually-hidden">
-                <tr>
-                  <td></td>
-                  <td>Antminer Hydro</td>
-                  <td>Стандартное охлаждение</td>
-                </tr>
+              <tr>
+                <td></td>
+                <td>Antminer Hydro</td>
+                <td>Стандартное охлаждение</td>
+              </tr>
               </thead>
               <tr class="what-difference__tr">
                 <td class="what-difference__td">Разгон</td>
@@ -471,7 +491,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__container">
-      <a href="#" class="header__logo logo">
+      <a href="#" class="footer__logo logo">
         <picture>
           <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
           <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Логотип" width="146" height="56">

@@ -1,0 +1,88 @@
+.promo {
+    margin: 0 0 5rem;
+}
+
+.promo-slider__item {
+    overflow: hidden;
+    position: relative;
+    padding: 6.25rem 4.4rem 4.4rem;
+    height: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+
+    &:not(:first-child) {
+        display: none;
+    }
+}
+
+.promo-slider__brand {
+    margin: 0 0 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.2;   
+    letter-spacing: 0.04em;
+    color: $color-text-light;
+}
+
+.promo-slider__heading {
+    margin: 0 0 2rem;
+    font-size: 3.1rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: $color-text-light;
+
+    span {
+        color: $color-accent-main;
+    }
+}
+
+.promo-slider__advantages-list {
+    margin: auto 0 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 9.38rem);
+    gap: 0.6rem;
+}
+
+.promo-slider__advantages-item {
+    padding: 1rem;
+    background: rgba(63, 71, 92, 0.1);
+    backdrop-filter: blur(15px);
+    color: $color-text-light;
+    border-radius: 0.6rem;
+
+    svg {
+        display: block;
+        margin: 0 0 1rem;
+        fill: $color-text-light;
+    }
+}
+
+.promo-slider__slide-background  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(77.43deg, #000000 9.79%, rgba(0, 0, 0, 0) 69.06%, rgba(0, 0, 0, 0) 85.25%);
+    }
+}

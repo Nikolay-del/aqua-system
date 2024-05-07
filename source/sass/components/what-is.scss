@@ -1,0 +1,63 @@
+.what-is {
+
+}
+
+.what-is__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.what-is__heading {
+  grid-column: 1 / 5;
+  margin: 0 0 1.25rem;
+
+  @include heading;
+}
+
+.what-is__heading-mark {
+  color: $color-accent-main;
+}
+
+.what-is__text {
+  margin: 0;
+  grid-column: 1 / 6;
+}
+
+.what-is__advantages-list {
+  grid-column: 1 / 6;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.what-is__advantages__item {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 3.4rem 1.25rem 2.2rem;
+  background-color: #eaedf2;
+  border-radius: 1.25rem;
+
+  &::before {
+    content: "";
+    flex: 0 0 auto;
+    margin-right: 1.6rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: $color-accent-main;
+    box-shadow: 0 0 4px 5px rgba(0, 102, 255, 0.5);
+  }
+}
+
+.what-is__picture {
+  max-width: 50%;
+  position: absolute;
+  right: 0;
+}
